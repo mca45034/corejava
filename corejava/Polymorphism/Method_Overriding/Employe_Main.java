@@ -12,10 +12,10 @@ class EmployeP{
 	
 }
 class Employe extends EmployeP{
-	int id;
-	String name;
-	String dep;
-	int salary;
+	private int id;
+	private  String name;
+	private String dep;
+	private int salary;
 	void emp() {
 		super.emp();
 		

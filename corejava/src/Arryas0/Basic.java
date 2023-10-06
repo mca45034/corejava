@@ -1,15 +1,23 @@
 package Arryas0;
 
+import java.util.Scanner;
+
 public class Basic {
 	public static void main(String[] args) {
-		int a[] = new int[5];
-		a[0] = 12;
-		a[1] = 13;
-		a[2] = 15;
-		a[3] = 17;
-		a[4] = 19;
-		for (int i = 0; i < a.length; i++) {
-			System.out.println(a[i]);
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the arry size..");
+		int size=sc.nextInt();
+		System.out.println("Enter the value");
+		int []num=new int[size];
+		for (int i = 0; i < size; i++) {
+			num[i]=sc.nextInt();
+		}
+		System.out.println("Enter the value..");
+		int s=sc.nextInt();
+		for(int i=0;i<size;i++) {
+			if(num[i]==s) {
+				System.out.println(i);
+			}
 		}
 
 	}
