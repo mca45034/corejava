@@ -3,19 +3,15 @@ package String;
 public class Example1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int num=34695;
-		int max=0;
-		
-		while(num>0) {
-			int count=0;
-			int rem=num%10;
-			if(num<max) {
-				count++;
+		int many=1337;
+		int count=0;
+		int note[]= {500,200,100,50,20,10,5,2,1};
+		for (int i = 0; i < note.length; i++) {
+			count=many/note[i];
+			if(count>0) {
+				System.out.println(note[i]+" "+count);
 			}
-			//num=num/10;
-			
-			System.out.println(count);
+			many=many%note[i];
 		}
 		
 		

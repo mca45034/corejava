@@ -14,5 +14,7 @@
 	<classpathentry kind="src" path="com.con.Interface"/>
 	<classpathentry kind="src" path="Exception_Hendling"/>
 	<classpathentry kind="src" path="Importent_Program"/>
+	<classpathentry kind="src" path="com.co.All_Collection"/>
+	<classpathentry kind="src" path="com.co.Maps"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
