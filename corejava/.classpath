@@ -6,15 +6,15 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="Opps1"/>
-	<classpathentry kind="src" path="Inheritence_Class"/>
-	<classpathentry kind="src" path="Polymorphism"/>
-	<classpathentry kind="src" path="Cloning_Dep"/>
-	<classpathentry kind="src" path="com.on.Abstraction"/>
-	<classpathentry kind="src" path="com.con.Interface"/>
-	<classpathentry kind="src" path="Exception_Hendling"/>
-	<classpathentry kind="src" path="Importent_Program"/>
-	<classpathentry kind="src" path="com.co.All_Collection"/>
-	<classpathentry kind="src" path="com.co.Maps"/>
+	<classpathentry kind="src" path="in.comOpps1"/>
+	<classpathentry kind="src" path="in.comInheritence_Class"/>
+	<classpathentry kind="src" path="in.com.Polymorphism"/>
+	<classpathentry kind="src" path="in.com.Cloning_Dep"/>
+	<classpathentry kind="src" path="in.com.Abstraction"/>
+	<classpathentry kind="src" path="in.con.Interface"/>
+	<classpathentry kind="src" path="in.com.Exception_Hendling"/>
+	<classpathentry kind="src" path="in.com.Importent_Program"/>
+	<classpathentry kind="src" path="in.com.All_Collection"/>
+	<classpathentry kind="src" path="in.com.Maps"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

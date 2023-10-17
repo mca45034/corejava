@@ -1,0 +1,18 @@
+package in.com.corejavaCello_Cloning;
+
+public class Bankes_Main {
+
+	public static void main(String[] args) throws CloneNotSupportedException {
+		Bankes b=new Bankes(101,"boi");
+		Bankes b1=(Bankes) b.clone();
+		b1.id=102;
+		b1.name="sbi";
+		System.out.println(b.id);
+		System.out.println(b.name);
+		System.out.println(b1.id);
+		System.out.println(b1.name);
+		
+
+	}
+
+}
