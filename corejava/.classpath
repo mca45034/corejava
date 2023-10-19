@@ -16,5 +16,6 @@
 	<classpathentry kind="src" path="in.com.Importent_Program"/>
 	<classpathentry kind="src" path="in.com.All_Collection"/>
 	<classpathentry kind="src" path="in.com.Maps"/>
+	<classpathentry kind="src" path="in.com.IOStrem"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
