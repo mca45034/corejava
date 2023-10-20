@@ -1,0 +1,92 @@
+package Singal_Leval;
+
+import java.util.Scanner;
+
+class Airline{
+	void display(String s) {
+		System.out.println("welcomr to..."+s);
+	}
+	void Discount() {
+		System.out.println("providing discount in par airline");
+	}
+}
+class Indigo extends Airline{
+	float price=0;
+	void discount() {
+		super.Discount();
+		Scanner sc=new Scanner(System.in);
+		System.out.println(" 1 mumbai to delhi....5000");
+		System.out.println(" 2 delhi to pune.......4000");
+		System.out.println("Enter the choice");
+		int choice=sc.nextInt();
+		switch(choice) {
+		case 1: 
+			price=5000;
+			cal_discount();
+			break;
+		case 2:
+			price=4000;
+			cal_discount();
+			break;
+		}
+		
+	}
+	void cal_discount() {
+		System.out.println("we are 5% discount ");
+		price=price-price*0.05f;
+		System.out.println("discount after price..."+price);
+			
+	}
+}
+class AirArabia extends Airline{
+	float price=0;
+	void discount() {
+		Scanner sc=new Scanner(System.in);
+		System.out.println(" 1.. mumbai to Dubai----10000");
+		System.out.println(" 2..mumbai to AbuDhabi-----12000");
+		System.out.println("enter the choice");
+		int choice=sc.nextInt();
+		
+		switch(choice) {
+		case 1:
+			price=10000;
+			cal_discount();
+			break;
+		case 2:
+			price=12000;
+			cal_discount();
+			break;
+		}
+	}
+		void cal_discount() {
+			System.out.println(" we  are giving 5% discount on ur tickets");
+			price=price-price*0.05f;
+			System.out.println("after discount ur ticket price is...."+price);
+			System.out.println("Thank you Have a safe journey");
+		
+	}
+}
+
+public class AirLineMain {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println(" 1..Indigo");
+		System.out.println(" 2..Air Arabian");
+		String s=sc.next();
+		Airline a;
+		if(s.equalsIgnoreCase("Indigo")) {
+			a=new Indigo();
+			a.display("Indigo airline");
+			a.Discount();
+		}
+		else {
+			a=new AirArabia();
+			a.display("air arabia airline");
+			a.Discount();
+		}
+
+	}
+
+}

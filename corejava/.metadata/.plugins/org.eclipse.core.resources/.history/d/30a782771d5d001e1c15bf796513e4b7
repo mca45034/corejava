@@ -1,0 +1,10 @@
+package Singal_Leval;
+
+public class Mobile_Shop {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

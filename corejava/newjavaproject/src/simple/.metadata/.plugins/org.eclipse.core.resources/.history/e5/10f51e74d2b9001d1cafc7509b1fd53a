@@ -1,0 +1,10 @@
+package Extra1_Class;
+
+public class Dublicate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

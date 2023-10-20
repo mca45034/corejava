@@ -1,0 +1,52 @@
+package Aggrigation_AComparator_ArrayList;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Student_Main1 {
+	private int id;
+	private String name;
+	private int fee;
+	public Student(int id, String name, int fee) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.fee = fee;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getFee() {
+		return fee;
+	}
+	public void setFee(int fee) {
+		this.fee = fee;
+	}
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", fee=" + fee + "]";
+	}
+	
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student s=new Student(010, "sham", 235);
+		Student s1=new Student(017, "aham", 435);
+		Student s2=new Student(045, "yham", 6635);
+		Student s3=new Student(19, "mham", 035);
+		ArrayList<Student>al=new ArrayList<>();
+		Collections.sort(al, new SortName());
+
+	}
+
+}

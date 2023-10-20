@@ -1,0 +1,16 @@
+package Hash_set;
+
+import java.util.HashSet;
+
+public class Dep_Employee_Main {
+
+	public static void main(String[] args) {
+		HashSet<Employee23>hs=new HashSet<>();
+		Department dep=new Department(10, "it", 12000);
+		Department dep1=new Department(10, "it", 12000);
+		Department dep2=new Department(10, "it", 12000);
+		
+
+	}
+
+}

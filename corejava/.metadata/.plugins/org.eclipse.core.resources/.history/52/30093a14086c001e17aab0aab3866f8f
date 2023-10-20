@@ -1,0 +1,25 @@
+package Hash_set;
+
+import java.util.HashSet;
+
+public class Banks_Main {
+
+	public static void main(String[] args) {
+		HashSet<Bankers>hs=new HashSet<Bankers>();
+		Bankers b=new Bankers(109, "sham", 765855654, "indore");
+		Bankers b1=new Bankers(112, "ram", 987855654, "pune");
+		Bankers b2=new Bankers(121, "lucey", 989855654, "noida");
+		Bankers b3=new Bankers(189, "dev", 555855654, "lalkila");
+		Bankers b4=new Bankers(109, "pappu", 765855654, "ujjain");
+		hs.add(b);
+		hs.add(b1);
+		hs.add(b2);
+		hs.add(b3);
+		hs.add(b4);
+		System.out.println(hs);
+		
+		
+
+	}
+
+}

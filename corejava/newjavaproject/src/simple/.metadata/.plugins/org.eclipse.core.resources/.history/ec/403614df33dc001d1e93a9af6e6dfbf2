@@ -1,0 +1,21 @@
+package Question_Prectice;
+
+public class SqureArry {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int arr[] = {23, 43, 25, 49, 12, 9, 78, 66, 39, 0}; 
+		
+		for(int i=0;i<arr.length;i++) {
+			int squre=arr[i]*arr[i];
+//			for(int j=0;j<arr.length;j++) {
+//				if(arr[j]==squre) {
+//					System.out.println(arr[i]);
+//				}
+//			}
+			System.out.println(squre);
+		}
+
+	}
+
+}

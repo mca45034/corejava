@@ -1,0 +1,45 @@
+package ArrayList_1;
+
+import java.util.ArrayList;
+
+public class Employe_Method_Main {
+	
+		
+	public static void main(String[] args) {
+		Employe_Method_Main em=new Employe_Method_Main();
+		Employe e1=new Employe();
+		e1.setE_id(101);
+		e1.setE_name("Sham");
+		e1.setE_salary(12400);
+		
+		Employe e2=new Employe();
+		e1.setE_id(105);
+		e1.setE_name("Dev");
+		e1.setE_salary(12700);
+		
+		Employe e3=new Employe();
+		e1.setE_id(120);
+		e1.setE_name("lucy");
+		e1.setE_salary(13400);
+		
+		Employe e4=new Employe();
+		e1.setE_id(111);
+		e1.setE_name("bobs");
+		e1.setE_salary(16400);
+		
+		Employe e5=new Employe();
+		e1.setE_id(122);
+		e1.setE_name("leks");
+		e1.setE_salary(19400);
+		
+		Employe e6=new Employe();
+		e1.setE_id(100);
+		e1.setE_name("Sham");
+		e1.setE_salary(10000);
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package in.com.List_API;
+
+import java.util.List;
+
+public class DublicateRemoveList {
+
+	public static void main(String[] args) {
+		List<Integer>l=
+
+	}
+
+}

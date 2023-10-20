@@ -1,0 +1,19 @@
+package in.com.corejavaSellow_Cloning;
+
+public class Company {
+	String cname;
+	String clocation;
+	Employee e=new Employee();
+	public Company(String cname, String clocation) {
+		super();
+		this.cname = cname;
+		this.clocation = clocation;
+	}
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+	     Company c=(Company) super.clone();
+	    		 e.eid=(int) super.clone();
+		return c;
+	}
+
+}

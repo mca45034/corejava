@@ -1,0 +1,22 @@
+1 Create Customer class with custid,custName, mobile fields. 
+
+Create Order class with ordered id,o_date, location
+Create TreeMap with customer as key and Order as value .it should be sorted
+according to custId in ascending order.
+
+
+2. Add TreeMap created in Q12 in other TreeMap which should be sorted by
+custID in descending order.
+
+
+3 from treemap created in Q12 get order details of customer with custid
+1101.
+
+
+4 from above treemap sort values of location descending order
+
+5.Create HashMap<String,Integer>
+
+sort key on ascending order
+
+sort value on basis of descending order.

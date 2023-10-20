@@ -1,0 +1,12 @@
+package Lambda_Expretion1;
+
+ @FunctionalInterface
+public interface  Calculatar {
+	int operator(int x,int y);
+	default void Display() {
+		System.out.println("i am lambda expretion");
+		System.out.println();
+	}
+	
+
+}

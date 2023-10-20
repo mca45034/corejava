@@ -1,0 +1,26 @@
+package WrittenAssigment_31DEC;
+
+public class Assigment_4 {
+	static String c_name="----Wel come to company----";
+	String name;
+	int id;
+	Assigment_4(String name,int id){
+		this.name=name;
+		this.id=id;
+	}
+	void display() {
+		System.out.println("Employe name is..."+name);
+		System.out.println("Employe ID is.."+id);
+	}
+
+	public static void main(String[] args) {
+		 Assigment_4  e=new  Assigment_4 ("ShamKumar",1001);
+		 e.display();
+		 Methodcall m=new  Methodcall();
+		 m.display1();
+		 
+		 
+
+	}
+
+}

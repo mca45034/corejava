@@ -1,0 +1,31 @@
+package Basic;
+
+import corejavaInterface.main;
+class Exam{
+	int id;
+	String name;
+	String location;
+	public Exam(int id, String name) {
+		
+		this.id = id;
+		this.name = name;
+	}
+	public Exam(int id, String name, String location) {
+		this(100,"sham");
+		this.id = id;
+		this.name = name;
+		this.location = location;
+	}
+	
+	
+}
+
+public class Example {
+	public static void main(String[] args) {
+		Exam e=new Exam(199, "ram", "indore");
+		
+		
+	}
+ 
+	
+}

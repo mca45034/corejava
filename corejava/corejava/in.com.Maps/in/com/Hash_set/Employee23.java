@@ -1,0 +1,20 @@
+package in.com.Hash_set;
+
+public class Employee23 {
+	int eid;
+	String ename;
+	Department d1;
+	public Employee23(int eid, String ename, Department d1) {
+		super();
+		this.eid = eid;
+		this.ename = ename;
+		this.d1 = d1;
+	}
+	@Override
+	public String toString() {
+		return "Employee23 [eid=" + eid + ", ename=" + ename + "]";
+	}
+	
+	
+
+}

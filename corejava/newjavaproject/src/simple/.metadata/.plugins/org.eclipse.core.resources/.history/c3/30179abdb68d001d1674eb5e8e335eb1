@@ -1,0 +1,11 @@
+package Interface;
+
+
+public interface FunctionalInterface {
+	public static void main(String[] args, int x, int y) {
+		Calculater c=(a,b)->{ return x+y;};
+		
+	
+	}
+	
+}

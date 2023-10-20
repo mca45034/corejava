@@ -1,0 +1,10 @@
+package Interface;
+
+public interface lamda2 {
+	public static void main(String[] args) {
+		Lamda l=(a,b)->{return a-b;};
+		System.out.println(l.Substutetion(30, 110));
+		sin s=()->{System.out.println(Math.sin(4.5));s.show();
+	}
+
+}

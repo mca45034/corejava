@@ -1,0 +1,24 @@
+package ArrayList_1;
+
+import java.util.ArrayList;
+
+public class Course_main {
+	void maxFee(ArrayList<Course>al) {
+		Course c=al.get(0);
+		int max=c.getFee();
+		for (int i = 1; i <al.size(); i++) {
+			Course c1=al.get(i);
+			if(c1.getFee()>max) {
+				max=c1.getFee();
+			}
+			
+		}
+		System.out.println("maximum course fee is..."+max);
+	}
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

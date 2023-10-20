@@ -1,0 +1,15 @@
+package Lambda_Expretion1;
+
+public class Lamda_Calculatore {
+
+	public static void main(String[] args) {
+		 Calculatar c=(a,b)->{
+			 int sum=a+b;
+			 return sum;
+			 };
+		 c.Display();
+		 c.operator(23, 24);
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package in.com.ImportentClasses;
+
+public class MiscellaneousTask {
+
+	public static void main(String[] args) {
+		System.gc();
+		String ln=System.mapLibraryName("os.name.. :");
+		System.out.println(ln);
+
+	}
+
+}

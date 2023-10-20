@@ -1,0 +1,14 @@
+package Aggrigation_AComparator_ArrayList;
+
+public class Student_Main1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student s=new Student(010, "sham", 235);
+		Student s=new Student(017, "aham", 435);
+		Student s=new Student(045, "yham", 6635);
+		Student s=new Student(009, "mham", 035);
+
+	}
+
+}

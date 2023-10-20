@@ -1,0 +1,16 @@
+package simple;
+import java.util.Scanner;
+public class rediusOfCircle {
+	public static void main(String[] args) {
+		Scanner m = new Scanner(System.in);
+		System.out.print("Enter the redius of the Circle : ");
+		float redius =m.nextFloat();
+		float diameter = 2 * redius;
+		 float circumference = 2 * (float)3.14 * redius;
+		 float area =  (redius * redius);
+		 System.out.println("Diameter      = " +  diameter + " units");
+	        System.out.println("Circumference = " +  circumference + " units");
+	        System.out.println("Area   = " + area + " sq. units");
+	}
+
+}

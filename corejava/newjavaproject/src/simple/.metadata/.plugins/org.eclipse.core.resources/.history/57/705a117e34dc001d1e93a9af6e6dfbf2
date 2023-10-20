@@ -1,0 +1,37 @@
+package Question_Prectice;
+
+import java.util.Scanner;
+
+public class SqureArry {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+//		for(int i=0;i<arr.length;i++) {
+//			int squre=arr[i]*arr[i];
+//			for(int j=0;j<arr.length;j++) {
+//				if(arr[j]==squre) {
+//					System.out.println(arr[j]);
+//				}
+//			}
+//		}
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the size...");
+		int size=sc.nextInt();
+		System.out.println("Enter ther number...");
+		int num[]=new int [size];
+		for(int i=0;i<size;i++) {
+			num[i]=sc.nextInt();
+			double x=Math.sqrt(num[i]);
+			if(x==(int) x) {
+				System.out.println(x);
+			}
+			
+		}
+		
+		
+
+	}
+
+}

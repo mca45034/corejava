@@ -1,0 +1,17 @@
+package in.com.corejavaSellow_Cloning;
+
+public class Employee implements Cloneable{
+	int eid;
+	
+	public Employee(int eid) {
+		super();
+		this.eid = eid;
+		
+	}
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		return super.clone();
+	}
+	
+
+}

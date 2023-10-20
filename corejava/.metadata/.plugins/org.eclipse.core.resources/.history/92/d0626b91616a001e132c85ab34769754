@@ -1,0 +1,13 @@
+package Aggrigation_AComparator_ArrayList;
+
+import java.util.Comparator;
+
+public class SortName1 implements Comparator<Student>{
+
+	@Override
+	public int compare(Student o1, Student o2) {
+		
+		return o1.n;
+	}
+
+}

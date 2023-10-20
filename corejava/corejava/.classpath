@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="in.comOpps1"/>
+	<classpathentry kind="src" path="in.comInheritence_Class"/>
+	<classpathentry kind="src" path="in.com.Polymorphism"/>
+	<classpathentry kind="src" path="in.com.Cloning_Dep"/>
+	<classpathentry kind="src" path="in.com.Abstraction"/>
+	<classpathentry kind="src" path="in.con.Interface"/>
+	<classpathentry kind="src" path="in.com.Exception_Hendling"/>
+	<classpathentry kind="src" path="in.com.Importent_Program"/>
+	<classpathentry kind="src" path="in.com.All_Collection"/>
+	<classpathentry kind="src" path="in.com.Maps"/>
+	<classpathentry kind="src" path="in.com.IOStrem"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

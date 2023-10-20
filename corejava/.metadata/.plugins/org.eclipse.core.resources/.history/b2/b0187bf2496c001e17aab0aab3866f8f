@@ -1,0 +1,26 @@
+package in.com.Hash_set;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Iterator;
+
+public class FindValueToKey {
+
+	public static void main(String[] args) {
+		HashMap<Integer,String>hs=new HashMap<>();
+		ArrayList<String>al=new ArrayList<>();
+		hs.put(101, "sham");
+		hs.put(123, "rahul");
+		hs.put(220, "ram");
+		hs.put(200, "dev");
+		Collection<String>cl=hs.values();
+		Iterator<String>it=cl.iterator();
+		while(it.hasNext()) {
+			String s=it.next();
+			al.add(s);
+		}
+
+	}
+
+}

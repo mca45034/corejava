@@ -1,0 +1,8 @@
+package in.com.corejavaCello_Cloning;
+
+public class Bankes extends Cloneble{
+	int id;
+	String name;
+	
+
+}

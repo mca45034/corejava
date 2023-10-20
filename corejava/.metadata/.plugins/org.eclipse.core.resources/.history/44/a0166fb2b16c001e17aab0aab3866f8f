@@ -1,0 +1,22 @@
+package in.com.Lambda_FunctionalInterface;
+
+@FunctionalInterface
+interface Array1{
+	public void maxi(int arr[]);
+}
+public class MaxiNumberFunInter {
+
+	public static void main(String[] args) {
+		Array1 a=new Array1() {
+			
+			@Override
+			public void maxi(int[] arr) {
+				
+				
+			}
+		};
+		a.maxi(arr);
+
+	}
+
+}

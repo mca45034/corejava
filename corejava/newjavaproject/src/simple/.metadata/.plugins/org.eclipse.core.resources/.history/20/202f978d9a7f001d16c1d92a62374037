@@ -1,0 +1,21 @@
+package dec_19th_assigment;
+
+public class primeNumber {
+	public static void main(String[] args) {
+		int num=400;
+		int count=0;
+		int i;
+		int flage=0;
+		for( i=300;i<=num;i++) {
+			for(int j=2;j<i;j++) {
+			if(i%j !=0) {
+			
+				System.out.print(i +" ");	
+			}
+			
+		}
+		}
+		
+	}
+
+}

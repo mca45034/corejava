@@ -1,0 +1,10 @@
+package Hash_set;
+
+public class Banks_Main {
+
+	public static void main(String[] args) {
+		HashSet<>
+
+	}
+
+}

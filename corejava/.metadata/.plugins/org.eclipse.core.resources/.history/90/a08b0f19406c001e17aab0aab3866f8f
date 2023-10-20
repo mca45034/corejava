@@ -1,0 +1,13 @@
+package Hash_set;
+
+import java.util.Comparator;
+
+public class SortName implements Comparator<Bankers>{
+
+	@Override
+	public int compare(Bankers o1, Bankers o2) {
+		
+		return o2.name.compareTo(o1.name);
+	}
+
+}

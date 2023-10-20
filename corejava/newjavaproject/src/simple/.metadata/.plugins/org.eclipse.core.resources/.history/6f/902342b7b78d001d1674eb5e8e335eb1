@@ -1,0 +1,9 @@
+package Interface;
+
+public interface lamda2 {
+	public static void main(String[] args) {
+		Lamda l=(a,b)->{return a-b;};
+		System.out.println(l.Substutetion(30, 10));
+	}
+
+}

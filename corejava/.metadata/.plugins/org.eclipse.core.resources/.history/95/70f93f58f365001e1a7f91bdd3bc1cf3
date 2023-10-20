@@ -1,0 +1,76 @@
+package ArrayList_1;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Employe_Method_Main {
+	void maxSalary(ArrayList<Employe>al) {
+		Employe em=al.get(0);
+		int max=em.getE_salary();
+		for (int i = 0; i < al.size(); i++) {
+			Employe emp=al.get(i);
+			if(emp.getE_salary()>max) {
+				max=emp.getE_salary();
+			}
+		}
+		System.out.println("maximum salary ..."+max);
+	}
+	void disp(ArrayList<Employe>al)
+	{
+		Iterator<Employe>it=al.iterator();
+		if(it.hasNext()) {
+			Employe ep=it.next();
+			System.out.println(ep);
+		}
+	}
+		
+	public static void main(String[] args) {
+		Employe_Method_Main em=new Employe_Method_Main();
+		Employe e1=new Employe();
+		e1.setE_id(101);
+		e1.setE_name("Sham");
+		e1.setE_salary(12400);
+		
+		Employe e6=new Employe();
+		e1.setE_id(100);
+		e1.setE_name("Sham");
+		e1.setE_salary(11000);
+		
+		Employe e2=new Employe();
+		e1.setE_id(105);
+		e1.setE_name("Dev");
+		e1.setE_salary(12700);
+		
+		Employe e3=new Employe();
+		e1.setE_id(120);
+		e1.setE_name("lucy");
+		e1.setE_salary(13400);
+		
+		Employe e4=new Employe();
+		e1.setE_id(111);
+		e1.setE_name("bobs");
+		e1.setE_salary(16400);
+		
+		Employe e5=new Employe();
+		e1.setE_id(122);
+		e1.setE_name("leks");
+		e1.setE_salary(19400);
+		
+		
+		
+		ArrayList<Employe> al=new ArrayList<>();
+		al.add(e1);
+		al.add(e2);
+		al.add(e3);
+		al.add(e4);
+		al.add(e5);
+		al.add(e6);
+		em.maxSalary(al);
+		em.disp(al);
+		
+		
+		
+
+	}
+
+}

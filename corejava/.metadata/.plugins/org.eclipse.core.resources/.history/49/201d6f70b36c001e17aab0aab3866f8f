@@ -1,0 +1,24 @@
+package in.com.Lambda_FunctionalInterface;
+@FunctionalInterface
+interface SecondLargeNo{
+	public void SecondNo(int arr[]);
+}
+
+public class SecondLargest_FunctionalInterface {
+
+	public static void main(String[] args) {
+		SecondLargeNo sn=new SecondLargeNo() {
+			int arr[]= {23,45,34,67,12,32,12};
+
+			@Override
+			public void SecondNo(int[] arr) {
+				
+				
+			}
+			
+		};
+		sn.SecondNo(arr);
+
+	}
+
+}

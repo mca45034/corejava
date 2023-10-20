@@ -1,0 +1,13 @@
+package in.com.OI;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+public class FileReader1 {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		FileReader r=new FileReader("C:\\Users\\HP\\Desktop\\IO\\File.txt");
+
+	}
+
+}

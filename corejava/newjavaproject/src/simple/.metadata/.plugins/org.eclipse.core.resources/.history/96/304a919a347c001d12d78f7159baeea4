@@ -1,0 +1,22 @@
+package basic;
+import java.util.Scanner;
+public class arithmetic_operations {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number A :");
+		int a = sc.nextInt();
+		System.out.println("Enter the number B :");
+		int b = sc.nextInt();
+	   int c =a+b;
+	   int d =a*b;
+	   int e=a-b;
+	   float f=a/b;
+	   float g=a%b;
+	   System.out.println("Adding " + c);
+	   System.out.println("multiply " + d);
+	   System.out.println("substitute " + e);
+	   System.out.println("divide " + f);
+	   System.out.println("modules " + g);
+	}
+
+}

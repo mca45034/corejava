@@ -1,0 +1,14 @@
+package in.com.Lambda_FunctionalInterface;
+
+@FunctionalInterface
+interface Array1{
+	public void maxi();
+}
+public class MaxiNumberFunInter {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

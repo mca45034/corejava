@@ -1,0 +1,21 @@
+package Assigment_TreeMap1;
+
+import java.util.Comparator;
+
+public class Sorts implements Comparator<Sorts> {
+
+	
+
+	
+
+	@Override
+	public int compare(Sorts o1, Sorts o2) {
+		// TODO Auto-generated method stub
+		return o2.compare(o1, o2);
+	}
+
+	
+
+	
+
+}

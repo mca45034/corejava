@@ -1,0 +1,13 @@
+package Strings;
+
+public class Importent2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s="rahulkirar@9211";
+		String s1=s.replace("921", "9211");
+		System.out.println(s1);
+
+	}
+
+}

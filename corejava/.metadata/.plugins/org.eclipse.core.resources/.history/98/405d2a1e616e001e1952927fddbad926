@@ -1,0 +1,19 @@
+package in.com.OI;
+
+import java.io.File;
+
+public class Puri_Detailes_Folder {
+
+	public static void main(String[] args) {
+		File f=new File("C:\\Users\\HP\\Desktop\\IO\\Dev.txt");
+		if(f.exists()) {
+			System.out.println("file name is : "+f.getName());
+			System.out.println("file path.. :"+f.getAbsolutePath());
+			System.out.println("file length..:"+f.length());
+			System.out.println("file...getperent :"+f.getParent());
+			System.out.println("file.."+f.getFreeSpace());
+		}
+
+	}
+
+}

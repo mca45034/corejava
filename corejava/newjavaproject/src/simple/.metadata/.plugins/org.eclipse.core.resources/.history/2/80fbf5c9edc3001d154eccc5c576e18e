@@ -1,0 +1,90 @@
+package com.test;
+
+
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Scanner;
+
+import com.connection.DBConections;
+
+public class AllMethod {
+	Scanner sc=new Scanner(System.in);
+	Connection con;
+	public AllMethod() throws ClassNotFoundException, SQLException {
+		con=DBConections.getConnection();
+	}
+	public void show1() throws SQLException {
+		
+		System.out.println("-----------state-------");
+		Statement st=con.createStatement();
+		ResultSet rs=st.executeQuery("select * from state");
+		while(rs.next()) {
+			System.out.println(rs.getInt(1)+" "+rs.getString(2));
+		}
+		System.out.println("Enter the your choice state");
+		String state_name=sc.next();
+		PreparedStatement ps=con.prepareStatement("select city_name\r\n"
+				+ "from State u inner join City p\r\n"
+				+ "on u.state_id=p.state_id\r\n"
+				+ "where state_name=?;");
+		ps.setString(1, state_name);
+		ResultSet rs1=ps.executeQuery();
+		while(rs1.next()) {
+			System.out.println(rs1.getString(1));
+		}
+	
+		
+	}
+	
+	
+	
+	
+	
+public void show2() throws SQLException {
+		
+		System.out.println("-----------City-------");
+		Statement st=con.createStatement();
+		ResultSet rs2=st.executeQuery("select * from City");
+		while(rs2.next()) {
+			System.out.println(rs2.getInt(1)+" "+rs2.getString(2));
+		}
+		System.out.println("Enter the your choice city");
+		String city_name=sc.next();
+		PreparedStatement ps=con.prepareStatement(" select centre_name\r\n"
+				+ " from City c inner join Centers ce\r\n"
+				+ " on c.city_id=ce.city_id\r\n"
+				+ " where city_name=?;");
+		ps.setString(1, city_name);
+		
+		ResultSet rs3=ps.executeQuery();
+		while(rs3.next()) {
+			System.out.println(rs3.getString(1));
+		}
+		
+		
+	}
+public void show3() throws SQLException {
+	System.out.println("------slot------");
+	System.err.println("There are slot time");
+	
+	Statement st=con.createStatement();
+	ResultSet rs=st.executeQuery("select*from Slot");
+	
+	while(rs.next()) {
+		System.out.println(rs.getInt(1)+" "+rs.getString(2)+" "+rs.getInt(3));
+	}
+}
+	
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		AllMethod a=new AllMethod();
+		a.show1();
+		a.show2();
+		a.show3();
+		
+	}
+
+}

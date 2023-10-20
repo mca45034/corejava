@@ -1,0 +1,9 @@
+package Hash_set;
+
+import java.util.HashSet;
+
+public class Bankers {
+	HashSet<Integer>l1=new HashSet<Integer>();
+	l1.add(109);
+
+}

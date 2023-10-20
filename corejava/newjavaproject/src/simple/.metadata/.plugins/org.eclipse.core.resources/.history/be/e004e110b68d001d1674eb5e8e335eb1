@@ -1,0 +1,17 @@
+package Interface;
+class Adding implements Calculater{
+
+	@Override
+	public int operation(int x, int y) {
+		System.out.println("Adding to value.."+x+y);
+		return x+y;
+		
+	}
+	
+}
+
+public interface FunctionalInterface {
+	Calculater c=new Adding ();
+	
+
+}

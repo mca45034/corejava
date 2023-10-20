@@ -1,0 +1,16 @@
+package in.com.OI;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class PrintSWriters {
+
+	public static void main(String[] args) throws IOException {
+		FileReader file=new FileReader("C:\\Users\\HP\\Desktop\\IO\\Dev.txt");
+		PrintWriter line= new PrintWriter(file)
+
+	}
+
+}

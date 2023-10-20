@@ -1,0 +1,15 @@
+package ArrayList_1;
+
+import java.util.ArrayList;
+
+public class Student_Main {
+
+	public static void main(String[] args) {
+		ArrayList<Student> al=new ArrayList<>();
+		Student s=new Student(101, "Sham", 2300.5f);
+		al.add(s);
+		al.add(new Student(102,"Rahul", 2323.5f));
+
+	}
+
+}

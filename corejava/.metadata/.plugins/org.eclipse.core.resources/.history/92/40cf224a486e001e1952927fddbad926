@@ -1,0 +1,23 @@
+package in.com.OI;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class FileReader1 {
+
+	public static void main(String[] args) throws IOException  {
+		FileReader r=new FileReader("C:\\Users\\HP\\Desktop\\IO\\File.txt");
+		BufferedReader b=new BufferedReader(r);
+		String ramu=b.readLine();
+		while(ramu != null) {
+			System.out.print(ramu);
+			ramu=b.readLine();
+		}
+			r.close();
+			b.close();
+
+	}
+
+}

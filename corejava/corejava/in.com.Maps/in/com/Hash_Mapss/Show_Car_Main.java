@@ -1,0 +1,49 @@
+package in.com.Hash_Mapss;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Scanner;
+import java.util.Set;
+
+public class Show_Car_Main {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the showroom name.. :");
+		String sname=sc.next();
+		System.out.println("Enter the showroom location.. :");
+		String slocation=sc.next();
+		
+		
+		System.out.println("Enter the car name..:");
+		String cname=sc.next();
+		System.out.println("Enter the car prize..:");
+		int cprize=sc.nextInt();
+		System.out.println("Enter the car fuel type..:");
+		String ctype=sc.next();
+		Showroom s=new Showroom();s.setSname(sname);s.setSlocation(slocation);
+		Showroom s1=new Showroom();s1.setSname(sname);s1.setSlocation(slocation);
+		Showroom s2=new Showroom();s2.setSname(sname);s2.setSlocation(slocation);
+		
+		Car c=new Car();c.setCname(cname);c.setCprize(cprize);c.setCtype(ctype);
+		Car c1=new Car();c1.setCname(cname);c1.setCprize(cprize);c1.setCtype(ctype);
+		
+		HashMap<Showroom,Car>hm=new HashMap<>();
+		hm.put(s,c);
+		hm.put(s1, c1);
+		hm.put(s2, c1);
+		
+		Set<Entry<Showroom,Car>>set=hm.entrySet();
+		for(Map.Entry<Showroom, Car>map:set) {
+			Showroom sho=map.getKey();
+			Car ca=map.getValue();
+			if(ca.cname.equals(cname)) {
+				System.out.println(ca.cname+" "+ca.cprize+" "+ca.ctype+" "+sho.sname+" "+sho.slocation);
+			}
+		}
+		
+
+	}
+
+}

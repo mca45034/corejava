@@ -1,0 +1,17 @@
+package in.com.ImportentClasses;
+
+public class MiscellaneousTask {
+
+	public static void main(String[] args) {
+		System.gc();
+		System.out.println("garbage collecter....!!!!");
+		String ln=System.mapLibraryName("os.name.. :");
+		System.out.println(ln);
+		
+
+		System.runFinalization();
+		System.exit(1);
+
+	}
+
+}

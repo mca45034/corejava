@@ -1,0 +1,16 @@
+package Uncheacked_Exception;
+
+public class NotEligibleToVote extends Exception {
+	void cheak(int age) throws NotEligibleToVote
+	{
+		if(age<18) {
+			throw new NotEligibleToVote();
+		}
+	}
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

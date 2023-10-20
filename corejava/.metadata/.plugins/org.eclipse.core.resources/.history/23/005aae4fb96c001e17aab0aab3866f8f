@@ -1,0 +1,13 @@
+package in.com.corejavaCello_Cloning;
+
+public class Bankes_Main {
+
+	public static void main(String[] args) {
+		Bankes b=new Bankes(101,"sham");
+		Bankes b1=b;
+		
+		
+
+	}
+
+}

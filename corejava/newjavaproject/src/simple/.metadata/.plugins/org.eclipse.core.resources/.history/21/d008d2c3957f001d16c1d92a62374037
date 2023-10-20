@@ -1,0 +1,10 @@
+package dec_19th_assigment;
+
+public class cheakAutomorphicNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

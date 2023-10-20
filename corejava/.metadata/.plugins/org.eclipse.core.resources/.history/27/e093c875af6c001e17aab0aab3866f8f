@@ -1,0 +1,31 @@
+package in.com.Lambda_Expretion1;
+
+public class Lamda_Calculatore {
+
+	public static void main(String[] args) {
+		 Calculatar c=(a,b)->{
+			 int sum=a+b;
+			 return sum;};
+		 c.Display();
+		 c.operator(23, 24);
+		  
+		 Calculatar c1=(a,b)->{
+			 int Minus=a-b;
+			 c.Display();
+			 c.operator(24, 23);
+			 return Minus;
+		 };
+//		 Calculatar c=(s1,s2)->{
+//			String Add=s1.concat(s2);
+//			return Add;
+//			c.meean("rahul","kirar");
+//			c.Disp2();
+//			
+//		 };
+		 
+//		 
+		// System.out.println();
+
+	}
+
+}

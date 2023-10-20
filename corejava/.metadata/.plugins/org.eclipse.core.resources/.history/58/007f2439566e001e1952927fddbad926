@@ -1,0 +1,50 @@
+package in.com.OI;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Read_writeFile {
+
+	public static void main(String[] args) {
+		File f=new File("rays.txt");
+		try {
+			f.createNewFile();
+		} catch (IOException e) {
+			System.out.println("File not found...");
+			e.printStackTrace();
+		}
+//		try {
+//			FileWriter fm=new FileWriter(f);
+//			fm.write("1 Create Customer class with custid,custName, mobile fields. \r\n" + 
+//					"\r\n" + 
+//					"Create Order class with ordered id,o_date, location\r\n" + 
+//					"Create TreeMap with customer as key and Order as value .it should be sorted\r\n" + 
+//					"according to custId in ascending order.\r\n" + 
+//					"\r\n" + 
+//					"\r\n" + 
+//					"2. Add TreeMap created in Q12 in other TreeMap which should be sorted by\r\n" + 
+//					"custID in descending order.\r\n" + 
+//					"\r\n" + 
+//					"\r\n" + 
+//					"3 from treemap created in Q12 get order details of customer with custid\r\n" + 
+//					"1101.\r\n" + 
+//					"\r\n" + 
+//					"\r\n" + 
+//					"4 from above treemap sort values of location descending order\r\n" + 
+//					"\r\n" + 
+//					"5.Create HashMap<String,Integer>\r\n" + 
+//					"\r\n" + 
+//					"sort key on ascending order\r\n" + 
+//					"\r\n" + 
+//					"sort value on basis of descending order.");
+//			fm.close();
+//		} catch (Exception e) {
+//			System.out.println("not found..");
+//			e.printStackTrace();
+//			
+//		}
+
+	}
+
+}

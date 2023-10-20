@@ -1,0 +1,52 @@
+package in.com.Hash_set;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class FindValueReverseOrder {
+
+	public static void main(String[] args) {
+		HashMap<String,Integer>hm=new HashMap<String, Integer>();
+		ArrayList<Integer>al=new ArrayList<>();
+		LinkedHashMap<String,Integer>lhmap=new LinkedHashMap<String, Integer>();
+		hm.put("rahul", 777);
+		hm.put("dev", 222);
+		hm.put("shubh", 888);
+		hm.put("alex", 333);
+		Collection<Integer>cl=hm.values();
+		Iterator<Integer>it=cl.iterator();
+		while(it.hasNext()) {
+			Integer i=it.next();
+			al.add(i);
+			
+		}
+		System.err.println(hm);
+		Collections.sort(al);
+		Iterator<Integer>it1=al.iterator();
+		while(it1.hasNext()) {
+			Integer i1=it1.next();
+			Set<Entry<String, Integer>>set=hm.entrySet();
+			for(Map.Entry<String, Integer>map:set) {
+				Integer i2=map.getValue();
+				if(i2.equals(i1)) {
+					String s=map.getKey();
+					lhmap.put(s, i1);
+				}
+			}
+			
+			
+			
+			
+		}
+		System.err.println(lhmap);
+
+	}
+
+}

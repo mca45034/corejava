@@ -1,0 +1,22 @@
+package dec_19th_assigment;
+
+public class primeNumber_300thTo400th {
+
+	public static void main(String[] args) {
+		int min=300,flage=0,j,i;
+		int max=400;
+		for( i=min;i<max;i++) {
+			for( j=2;j<i;j++) {
+				if(i%j==0) {
+					flage=1;
+					break;
+				}
+			}
+		}
+		if(flage==0) {
+			System.out.println("prime number" +i);
+		}
+
+	}
+
+}

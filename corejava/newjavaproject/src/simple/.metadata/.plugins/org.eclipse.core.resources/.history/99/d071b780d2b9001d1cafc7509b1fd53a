@@ -1,0 +1,40 @@
+package Extra1_Class;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+
+public class Dublicate {
+
+	public static void main(String[] args) {
+		ArrayList<String>al=new ArrayList<>();
+		HashMap<String,Integer>hm=new HashMap<>();
+		al.add("Mumbai");
+		al.add("indore");
+		al.add("pune");
+		al.add("Mumbai");
+		al.add("Mumbai");
+		al.add("delhi");
+		al.add("Mumbai");
+		al.add("delhi");
+		al.add("pune");
+		al.add("Mumbai");
+		al.add("pune");
+		al.add("indore");
+		Iterator<String>it=al.iterator();
+		while(it.hasNext()) {
+			String s=it.next();
+			int count=1;
+			if(hm.containsKey(s)) {
+				count=hm.get(s);
+				count=count+1;
+				hm.put(s, count);
+			}
+			else 
+				hm.put(s, count);
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package in.com.corejavaCello_Cloning;
+
+public class Bankes implements Cloneable{
+	int id;
+	String name;
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		
+		return super.clone();
+	}
+	
+
+}

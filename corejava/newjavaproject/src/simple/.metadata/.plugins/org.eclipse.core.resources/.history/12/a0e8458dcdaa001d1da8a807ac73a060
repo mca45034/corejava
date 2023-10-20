@@ -1,0 +1,21 @@
+package HashMap_Assigment;
+
+public class CharRemoveDubli_11 {
+
+	public static void main(String[] args) {
+		char s[]= {'a','b','a','d','z','m','d','b'};
+		
+		for(int i=0;i<s.length;i++) {
+			int flage=0;
+		for(int j=i+1;j<s.length;j++) {
+			if(s[i] ==s[j]) {
+				flage=1;
+			}
+		}
+		if(flage==1) {
+			System.out.println(s[i]);
+		}
+		}
+	}
+
+}

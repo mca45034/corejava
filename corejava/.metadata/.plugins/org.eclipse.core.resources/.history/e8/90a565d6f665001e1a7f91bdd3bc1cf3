@@ -1,0 +1,52 @@
+package ArrayList_1;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Course_main {
+	void maxFee(ArrayList<Course>al) {
+		Course c=al.get(0);
+		int max=c.getFee();
+		for (int i = 1; i <al.size(); i++) {
+			Course c1=al.get(i);
+			if(c1.getFee()>max) {
+				max=c1.getFee();
+			}
+			
+		}
+		System.out.println("maximum course fee is..."+max);
+	}
+	void disp(ArrayList<Course>al) {
+		Iterator<Course>it=al.iterator();
+		System.out.println("School name is.. : "+Course.getSname());
+		while(it.hasNext()) {
+			Course ce=it.next();
+			System.out.println(ce);
+		}
+	}
+
+	public static void main(String[] args) {
+		Course_main cm=new Course_main();
+		Course c1=new Course();
+		c1.setId(101);
+		c1.setName("java");
+		c1.setFee(1200);
+		
+		Course c2=new Course();
+		c1.setId(106);
+		c1.setName("c++");
+		c1.setFee(1500);
+		Course c3=new Course();
+		c1.setId(109);
+		c1.setName("php");
+		c1.setFee(1300);
+		ArrayList<Course> al=new ArrayList<Course>();
+		al.add(c1);
+		al.add(c2);
+		al.add(c3);
+		cm.maxFee(al);
+		cm.disp(al);
+
+	}
+
+}

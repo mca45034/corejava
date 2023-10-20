@@ -1,0 +1,17 @@
+package in.com.OI;
+
+import java.io.File;
+
+public class Read_writeFile {
+
+	public static void main(String[] args) {
+		File f=new File("rays.txt");
+		try {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+	}
+
+}

@@ -1,0 +1,65 @@
+package Singal_Leval;
+ class Shap{
+	String color;
+	int border;
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	public int getBorder() {
+		return border;
+	}
+	public void setBorder(int border) {
+		this.border = border;
+	}
+	public void disp() {
+		System.out.println(color);
+		System.out.println(border);
+	}
+	 
+	
+}
+  class Ractangle extends Shape {
+  String color;
+	int width;
+	
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public int getWidth() {
+		return width;
+	}
+
+	public void setWidth(int width) {
+		this.width = width;
+	}
+
+	public void disp2() {
+		System.out.println(color);
+		System.out.println(width);
+	}
+	
+	
+}
+
+public class Lcd_main{
+	public static void main(String[] args) {
+    //Ractangle r=new Ractangle();
+		Shape s = new Shape();
+    r.setColor("werg");
+    r.setWidth(13);
+    r.setBordertWith(123);
+    r.setColor("sdfg");
+    r.disp1();
+    r.disp2();
+    
+		
+	}
+}

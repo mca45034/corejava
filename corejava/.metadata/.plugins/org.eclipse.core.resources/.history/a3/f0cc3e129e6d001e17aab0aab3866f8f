@@ -1,0 +1,19 @@
+package in.com.OI;
+
+import java.io.File;
+import java.io.IOException;
+
+public class Read_writeFile {
+
+	public static void main(String[] args) {
+		File f=new File("rays.java");
+		try {
+			f.createNewFile();
+		} catch (IOException e) {
+			System.out.println("File not found...");
+			e.printStackTrace();
+		}
+
+	}
+
+}
