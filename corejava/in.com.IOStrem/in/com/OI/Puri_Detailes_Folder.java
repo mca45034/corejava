@@ -20,7 +20,9 @@ public class Puri_Detailes_Folder {
 			System.out.println("file...:"+f.isFile());//boolean
 			System.out.println("file.....:"+f.listRoots());//file hashcode address
 			System.out.println("file... :"+f.list());//boolean
-			System.out.println("file..:"+f.isDirectory());
+			System.out.println("file..:"+f.isDirectory());//
+			System.out.println("file..:"+f);
+			
 		}
 
 	}
