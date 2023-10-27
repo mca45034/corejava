@@ -1,0 +1,48 @@
+package in.com.Thread.Yield;
+class Thread1 implements Runnable{
+
+	@Override
+	public void run() {
+		String s=Thread.currentThread().getName();
+		for (int i = 1; i < 10; i++) {
+			System.out.println(s+" "+i);
+			Thread.yield();
+			
+		}
+		
+	}
+	
+}
+class Thread2 implements  Runnable {
+
+	@Override
+	public void run() {
+		String s=Thread.currentThread().getName();
+		for (int i = 1; i < 5; i++) {
+			System.out.println(s+" "+i);
+			Thread.yield();
+			
+		}
+		
+	}
+	
+}
+
+public class Yield_main {
+	
+	public static void main(String[] args) throws InterruptedException {
+		Runnable r;
+		r=new Thread1();
+		Thread t=new Thread(r,"Thread1");
+		t.getPriority();
+		t.start();
+		t.sleep(1209000000);
+		t.onSpinWait();
+		
+		
+
+	
+}
+
+	
+}

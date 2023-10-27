@@ -1,0 +1,33 @@
+package in.com.ArrayList_1;
+class Ram{
+	int id ;
+	String name;int slary;
+	public Ram() {
+		// TODO Auto-generated constructor stub
+		this(12,"dev");
+		System.out.println("sham");
+	}
+	public Ram(int id,String name) {
+		// TODO Auto-generated constructor stub
+		this(123,"ram",2345);
+		System.out.println("ram");
+	}
+	public Ram(int id,String name,int slary) {
+		// TODO Auto-generated constructor stub
+		
+		System.out.println("dev");
+	}
+	
+}
+
+public class Examples {
+
+	public static void main(String[] args) {
+		Ram r=new Ram();
+//		r.id=10;
+//		r.name="sham";
+		
+
+	}
+
+}

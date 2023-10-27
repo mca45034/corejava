@@ -1,0 +1,24 @@
+package in.com.OI;
+
+import java.io.BufferedReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+
+public class ByScanner_Syso_Enter {
+
+	public static void main(String[] args) throws IOException {
+		System.out.println("Enter the text here...");InputStreamReader reader=new InputStreamReader(System.in);
+		BufferedReader line=new BufferedReader(reader);FileWriter file=new FileWriter("C:\\Users\\HP\\Desktop\\IO\\java.txt");
+		PrintWriter l=new PrintWriter(file);String s=line.readLine();
+		while(!(s.equals("stop"))) {
+			l.println(s);
+			s=line.readLine();
+		}
+		reader.close();file.close();line.close();l.close();
+		System.out.println("done");
+
+	}
+
+}

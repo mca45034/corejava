@@ -1,0 +1,23 @@
+package in.com.String;
+
+public class CountCharacter {
+
+	public static void main(String[] args) {
+		String name="malayalam";
+		//char s='a';
+		int count=0;
+		for (int i = 'a'; i <'z'; i++) {
+			for (int j = 0; j < name.length(); j++) {
+				if(i==j) {
+					count++;
+				}
+				
+			}
+			System.out.println(i+" "+count);
+		}
+		
+		
+
+	}
+
+}

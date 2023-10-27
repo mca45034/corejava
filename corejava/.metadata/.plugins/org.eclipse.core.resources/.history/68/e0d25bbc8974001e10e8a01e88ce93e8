@@ -1,0 +1,10 @@
+package in.com.Uncheacked_Exception;
+
+public class BinaryNumberExceptions {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

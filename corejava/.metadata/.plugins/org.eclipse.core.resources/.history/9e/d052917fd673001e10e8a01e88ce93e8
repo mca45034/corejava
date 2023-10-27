@@ -1,0 +1,21 @@
+package in.com.String;
+
+public class SequenceOfCharacter {
+
+	public static void main(String[] args) {
+		String name="malayalam";
+		int count=0;
+		for (char i = 'a'; i < 'z'; i++) {
+			for (int j = 0; j < name.length(); j++) {
+				if(name.charAt(j)==i) {
+					count++;
+				}
+				
+			}
+			System.out.println(i+" "+count);
+			
+		}
+
+	}
+
+}

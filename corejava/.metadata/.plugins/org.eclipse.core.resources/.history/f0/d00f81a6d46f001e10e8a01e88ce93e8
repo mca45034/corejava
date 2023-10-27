@@ -1,0 +1,19 @@
+package in.com.OI;
+
+import java.io.File;
+
+public class CreateFile_Read_Write {
+
+	public static void main(String[] args) {
+		File myFile=new File("Name.txt");
+		try {
+			myFile.createNewFile();
+		} catch (Exception e) {
+			System.out.println("not create file");
+			e.printStackTrace();
+		}
+		System.out.println("done");
+
+	}
+
+}

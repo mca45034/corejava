@@ -1,0 +1,5 @@
+package in.com.Thread.Basic;
+
+public class DaemonThread1 {
+
+}

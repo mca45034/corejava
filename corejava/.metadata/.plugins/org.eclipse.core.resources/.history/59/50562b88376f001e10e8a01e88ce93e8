@@ -1,0 +1,32 @@
+package in.com.ArrayList_1;
+
+import java.util.ArrayList;
+
+class Employe12 {
+	int id;
+	String name;
+	int salary;
+	public Employe12(int id, String name, int salary) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
+	}
+	@Override
+	public String toString() {
+		return "Employe123 [id=" + id + ", name=" + name + ", salary=" + salary + "]";
+	}
+
+}
+public class Employe123{
+	public static void main(String[] args) {
+	ArrayList<Employe12>al=new ArrayList<Employe12>();
+	al.add(new Employe12(101, "sham", 10000));
+	al.add(new Employe12(901, "ram", 11000));
+	al.add(new Employe12(99, "sachin", 9000));
+	al.add(new Employe12(202, "pappu", 10000));
+	al.add(new Employe12(98, "bhalu", 10000));
+		
+	}
+}
+ 

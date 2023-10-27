@@ -1,0 +1,14 @@
+package in.com.String;
+
+public class ReversString1 {
+
+	public static void main(String[] args) {
+		String s="rahul kirar";
+		int a[]= {1,2,3,4,5};
+		for(int i=a.length;i>=0;i--) {
+			System.out.print(i);
+		}
+
+	}
+
+}

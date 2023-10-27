@@ -1,0 +1,10 @@
+package in.com.Uncheacked_Exception;
+
+public class FebonacciSeriesExceptions {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

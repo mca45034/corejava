@@ -1,0 +1,40 @@
+package in.com.Aggrigation_AComparator_ArrayList;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+
+public class Book_Mains {
+
+	int id;
+	String name;
+	int price;
+	public Book_Mains(int id, String name, int price) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.price = price;
+	}
+	@Override
+	public String toString() {
+		return "Book [id=" + id + ", name=" + name + ", price=" + price + "]";
+	}
+	public static void main(String[] args) {
+		ArrayList<Book_Mains>al=new ArrayList<Book_Mains>(); 
+		Book_Mains b;
+		al.add(new Book_Mains(109, "sham", 1234));
+		al.add(new Book_Mains(111, "aam", 1005));
+		al.add(new Book_Mains(106, "zam", 1034));
+		al.add(new Book_Mains(102, "bam", 1564));
+		System.out.println(al);
+		Collections.sort(al, new SortName2());
+		Iterator<Book_Mains> it=al.iterator();
+		while(it.hasNext()) {
+			Book_Mains b1=it.next();
+			System.out.println(b1);
+		}
+		
+
+	}
+
+}
