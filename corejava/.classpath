@@ -17,5 +17,7 @@
 	<classpathentry kind="src" path="in.com.All_Collection"/>
 	<classpathentry kind="src" path="in.com.Maps"/>
 	<classpathentry kind="src" path="in.com.IOStrem"/>
+	<classpathentry kind="src" path="in.com.Thread"/>
+	<classpathentry kind="src" path="in.com.FunctionalInterfaces"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

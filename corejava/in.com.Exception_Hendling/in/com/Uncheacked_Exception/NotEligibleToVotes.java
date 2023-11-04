@@ -1,0 +1,32 @@
+package in.com.Uncheacked_Exception;
+
+import java.util.Scanner;
+
+public class NotEligibleToVotes extends Exception{
+	void chaeks(int age) throws NotEligibleToVotes{
+		if(age<18) {
+			try {
+				throw new NotEligibleToVotes();
+			} catch (NotEligibleToVotes e) {
+				System.out.println("not eligible for vote..");
+			}
+		}
+		else {
+			System.out.println("you are eligible vote..");
+		}
+	}
+
+	public static void main(String[] args) {
+		NotEligibleToVotes vote=new NotEligibleToVotes();
+		Scanner sc=new  Scanner(System.in);
+		System.out.println("Enter the age..");
+		int age=sc.nextInt();
+		try {
+			vote.chaeks(age);
+		} catch (NotEligibleToVotes e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}
