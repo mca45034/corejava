@@ -1,0 +1,34 @@
+package in.com.Arryas0;
+
+public class NoteCount {
+
+	public static void main(String[] args) {
+//		int many=1234;
+//		int note[]= {500,200,100,50,20,10,5,2,1};
+//		int count=0;
+//		for (int i = 0; i < note.length; i++) {
+//			count=many/note[i];
+//			if(count>0) {
+//				System.out.println(note[i]+"-"+count);
+//			}
+//			many=many%note[i];
+		//}
+		String str = "abc1d2e";
+
+		int sum = 0;
+
+		for (int i = 0; i < str.length(); i++) {
+
+			if (Character.isDigit(str.charAt(i))) {
+
+				sum += Integer.parseInt(String.valueOf(str.charAt(i)));
+
+			}
+
+		}
+
+		System.out.println(sum);
+
+	}
+
+}

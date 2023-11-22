@@ -1,0 +1,43 @@
+package in.com.Precties;
+class Student{
+	private int s_id;
+	private String s_name;
+	private int age;
+	public Student(int s_id, String s_name, int age) {
+		super();
+		this.s_id = s_id;
+		this.s_name = s_name;
+		this.age = age;
+	}
+	public int getS_id() {
+		return s_id;
+	}
+	public void setS_id(int s_id) {
+		this.s_id = s_id;
+	}
+	public String getS_name() {
+		return s_name;
+	}
+	public void setS_name(String s_name) {
+		this.s_name = s_name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+}
+public interface Record{
+	boolean insert(Student s)throws Exception;
+}
+
+public class Student_Main {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

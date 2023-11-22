@@ -40,7 +40,7 @@ public class Dep_Employee_Main {
 		
 		}
 		System.out.println("------------------------");
-TreeSet<Department>ts2=new TreeSet<>(new DepSortName());
+		TreeSet<Department>ts2=new TreeSet<>(new DepSortName());
 		
 		ts.addAll(hs);
 		Iterator<Employee23>it2=hs.iterator();

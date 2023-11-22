@@ -1,0 +1,33 @@
+package NewOne;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class MarkSheetImp {
+	//public void add(Marksheet bean) throws ClassNotFoundException, SQLException {
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		
+	
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/rahul?autoReconnect=true&useSSL=false", "root", "root");
+		Statement st=con.createStatement();
+//		PreparedStatement ps=con.prepareStatement("insert into marksheet values(?,?,?,?,?)");
+//		ps.setInt(1, bean.getId());
+//		ps.setString(2, bean.getName());
+//		ps.setInt(3, bean.getRollNo());
+//		ps.setInt(4, bean.getPysics());
+//		ps.setInt(5, bean.getChemistry());
+//		ps.setInt(6, bean.getMaths());
+//		
+		int i=st.executeUpdate("insert into marksheet (id,name,rollNo,pysics,chemistry,maths)values(101,'sham',123,56,45,67)");
+	System.out.println("data insert"+i);
+	System.out.println("done");
+		
+	   
+	}
+
+}
+ 

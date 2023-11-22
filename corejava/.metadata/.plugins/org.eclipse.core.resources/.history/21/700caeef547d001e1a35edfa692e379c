@@ -1,0 +1,13 @@
+package in.com.deo;
+
+import java.sql.SQLException;
+
+import in.com.pojo.Employe;
+
+public interface Record {
+	boolean insert(Employe e)throws SQLException;
+	boolean update(Employe e)throws SQLException;
+	boolean delete()throws SQLException;
+	void veiw()throws SQLException;
+
+}

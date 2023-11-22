@@ -1,0 +1,10 @@
+package in.com.Thread.Yield;
+
+public class Car_company {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

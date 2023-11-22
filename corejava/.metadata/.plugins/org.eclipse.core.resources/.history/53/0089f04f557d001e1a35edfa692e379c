@@ -1,0 +1,53 @@
+package in.com.deo;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+import in.com.connection.DBConnection;
+import in.com.pojo.Employe;
+
+public class Employeimp implements Record{
+	Connection con;
+	Employe e=new Employe();
+	Scanner sc=new Scanner(System.in);
+	public Employeimp() throws ClassNotFoundException, SQLException {
+		con=DBConnection.getConnection();
+	}
+
+	@Override
+	public boolean insert(Employe e) throws SQLException {
+		PreparedStatement ps=con.prepareStatement("insert into employe values(?,?,?,?,?)");
+		ps.setInt(1, e.getE_id());
+		ps.setString(2, e.getE_name());
+		ps.setInt(3, e.getSalary());
+		ps.setFloat(4, e.getCommision());
+		ps.setString(5, e.getD_of_joining());
+		int x=ps.executeUpdate();
+		
+		if(x==1)
+			return true;
+		else
+			return false;
+	}
+
+	@Override
+	public boolean update(Employe e) throws SQLException {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean delete() throws SQLException {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void veiw() throws SQLException {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

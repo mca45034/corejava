@@ -1,0 +1,5 @@
+package in.com.FunctionalInterfacess;
+
+public interface DefaultStaticInterface {
+
+}

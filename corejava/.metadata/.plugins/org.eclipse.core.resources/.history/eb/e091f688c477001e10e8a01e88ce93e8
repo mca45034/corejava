@@ -1,0 +1,32 @@
+
+package in.com.Basic;
+
+public class Polindram1 {
+
+	public static void main(String[] args) {
+		int sum=0;
+		for (int i = 1; i <=9; i++) {
+			for (int j = 0; j <=9; j++) {
+				for (int j2 = 0; j2 <=9; j2++) {
+					int num=i*1001+j*101+j2*10;
+					if(num>=1000 && num<=10000) {
+						while(num>0) {
+							int rem=num%10;
+							sum=sum*10+rem;
+							num=num/10;
+						}
+						
+					}
+					
+					
+				}
+				
+			}
+			if(num==sum) {
+				System.out.println(sum);
+			}
+			
+		}
+	}
+
+}

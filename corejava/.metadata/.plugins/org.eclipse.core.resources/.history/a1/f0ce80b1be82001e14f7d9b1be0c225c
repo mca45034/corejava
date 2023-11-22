@@ -1,0 +1,15 @@
+package SynchronizedS;
+class CarName{
+	public synchronized void CarN() {
+		String s=Thread.currentThread().getName();
+	}
+}
+
+public class Car_main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

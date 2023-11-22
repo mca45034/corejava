@@ -1,0 +1,61 @@
+package in.com.pojo;
+
+public class Employey {
+	private int e_id;
+	private String e_name;
+	private int salary;
+	private int commision;
+	private String d_of_joining;
+	public Employey() {
+		
+	}
+	public Employey(int e_id, String e_name, int salary, int commision, String d_of_joining) {
+		super();
+		this.e_id = e_id;
+		this.e_name = e_name;
+		this.salary = salary;
+		this.commision = commision;
+		this.d_of_joining = d_of_joining;
+	}
+	public Employey(String e_name, int salary, int commision, String d_of_joining,int e_id) {
+		super();
+		
+		this.e_name = e_name;
+		this.salary = salary;
+		this.commision = commision;
+		this.d_of_joining = d_of_joining;
+		this.e_id = e_id;
+	}
+	public int getE_id() {
+		return e_id;
+	}
+	public void setE_id(int e_id) {
+		this.e_id = e_id;
+	}
+	public String getE_name() {
+		return e_name;
+	}
+	public void setE_name(String e_name) {
+		this.e_name = e_name;
+	}
+	public int getSalary() {
+		return salary;
+	}
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+	public float getCommision() {
+		return commision;
+	}
+	public void setCommision(int commision) {
+		this.commision = commision;
+	}
+	public String getD_of_joining() {
+		return d_of_joining;
+	}
+	public void setD_of_joining(String d_of_joining) {
+		this.d_of_joining = d_of_joining;
+	}
+	
+
+}

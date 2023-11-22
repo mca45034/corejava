@@ -1,0 +1,13 @@
+package NewOne;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
+
+public class TestMarksheet {
+	public static void main(String[] args) throws Exception {
+		Records r=new Records();
+		r.Disp();
+		
+	}
+}

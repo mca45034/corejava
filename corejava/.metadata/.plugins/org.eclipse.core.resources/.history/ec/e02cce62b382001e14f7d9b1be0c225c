@@ -1,0 +1,26 @@
+package DaemonS;
+class Students{
+	int id;String name;int age;
+
+
+	public Students(int id, String name, int age) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.age = age;
+	}
+	public void disp(){
+		System.out.println("Student id is.."+id);
+		System.out.println("student name is.."+name);
+		System.out.println("student age is.."+age);
+	}
+	
+}
+public class Student_main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

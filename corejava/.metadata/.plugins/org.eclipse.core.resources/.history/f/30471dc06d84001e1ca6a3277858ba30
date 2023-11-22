@@ -1,0 +1,20 @@
+package NewOne;
+
+import java.util.Iterator;
+import java.util.List;
+
+public class TestMarksheet {
+	public static void main(String[] args) throws Exception {
+		Records r=new Records();
+		 //r.testAdd();
+		// r.testUpdate();
+		// r.testDelete();
+		r.testFindById();
+		//r.testSearch();  // view database table
+
+	}
+
+	
+
+
+}

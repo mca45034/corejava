@@ -1,0 +1,46 @@
+package SynchronizedS;
+class Hdfc{
+	private int balance;
+	public Hdfc() {
+		// TODO Auto-generated constructor stub
+	}
+	public int getBalance() {
+		return balance;
+	}
+	public void setBalance(int balance) {
+		this.balance = balance;
+	}
+	public void Diposits(String name,int amount) {
+		int total=amount+getBalance();
+		setBalance(total);
+		System.out.println(name+"  "+getBalance());
+	}
+}
+class Race extends Thread{
+	String name;
+	Hdfc h=new Hdfc();
+	public Race(String name) {
+		this.name=name;
+	}
+	public Race() {
+		for (int i = 0; i <5; i++) {
+			this.h.Diposits(getName(), 1000);
+			
+		}
+	}
+}
+
+public class Hdfc_Bank {
+
+	public static void main(String[] args) {
+		Race r=new Race(null);
+		r.setName("sham");
+		r.start();
+		
+		Race r1=new Race(null);
+		r1.setName("dev");
+		r1.start();
+
+	}
+
+}

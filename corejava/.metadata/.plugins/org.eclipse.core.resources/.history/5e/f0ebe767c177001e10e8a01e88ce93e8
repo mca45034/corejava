@@ -1,0 +1,24 @@
+
+package in.com.Basic;
+
+public class Polindram1 {
+
+	public static void main(String[] args) {
+		int num=121;
+		int sum=0;
+		int tmp=num;
+		while(num>0) {
+			int rem=num%10;
+			sum=sum*10+rem;
+			num=num/10;
+		}
+		if(tmp==sum) {
+			System.out.println("true");
+		}
+		else {
+			System.out.println("false");
+		}
+
+	}
+
+}

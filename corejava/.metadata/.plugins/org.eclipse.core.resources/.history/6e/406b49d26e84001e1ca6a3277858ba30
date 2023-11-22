@@ -1,0 +1,33 @@
+package NewOne;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
+
+public class TestMarksheet {
+	public static void main(String[] args) throws Exception {
+		Records r=new Records();
+		 //r.testAdd();
+		// r.testUpdate();
+		// r.testDelete();
+		//r.testFindById();
+		//r.testSearch();  // view database table
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("=========================================");
+		System.out.println("WelCome to Student !!!!!");
+		System.out.println("=========================================");
+		System.out.println("1. insert data");
+		System.out.println("2. update data");
+		System.out.println("3. delete data");
+		System.out.println("4. find perticular name by id");
+		System.out.println("5. view the database table");
+		System.out.println(" ");
+		
+
+	}
+
+	
+
+
+}

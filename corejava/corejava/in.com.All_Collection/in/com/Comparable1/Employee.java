@@ -1,5 +1,5 @@
 package in.com.Comparable1;
-
+import java.lang.*;
 public class Employee implements Comparable<Employee>{
 	int eid;
 	String ename;

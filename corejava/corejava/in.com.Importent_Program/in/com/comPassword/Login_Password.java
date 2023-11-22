@@ -6,6 +6,7 @@ public class Login_Password {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
+		System.out.println("please sign up!!!!");
 		System.out.println("Enter the username...");
 		String username=sc.next();
 		System.out.println("Enter the Strong passoward...");
@@ -42,10 +43,14 @@ public class Login_Password {
 		if(charCount==0) {
 			System.out.println("Atleast one Uppercase required..");
 		}
+		System.out.println("youre password is created !!!");
 		if(flage==0) {
 			System.out.println("username is.... : "+username);
 			System.out.println("passward is... :"+passward);
+			
 		}
+		
+		
 		
 
 	}

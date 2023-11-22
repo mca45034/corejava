@@ -1,0 +1,33 @@
+use db1;
+create table authoreTable
+(
+authore_id int primary key,
+authore_name varchar(40),
+ph_no int,
+email varchar(30),
+address varchar(40),
+city varchar(20));
+
+create table bookTables
+(
+book_id int primary key,
+book_name varchar(20),
+price int,
+authore_id int,
+foreign key(authore_id) references authoreTable(authore_id));
+
+create table awardMasterTable
+(
+award_type_id int primary key,
+award_name varchar(30),
+award_price int);
+
+create table awardTables
+(
+award_id int primary key,
+years varchar(20),
+foreign key(award_type_id) references awardMasterTable(award_type_id),
+foreign key(authore_id) references authoreTable(authore_id),
+foreign key (book_id ) references bookTables(book_id ));
+
+

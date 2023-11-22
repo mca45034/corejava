@@ -1,0 +1,26 @@
+
+package in.com.Basic;
+
+public class Polindram1 {
+
+	public static void main(String[] args) {
+		int num=10000;
+		int a=1000;
+		int sum=0;
+		//int tmp=num;
+		for (int i = a; i <num; i++) {
+			
+		while(i>0) {
+			int rem=i%10;
+			sum=sum*10+rem;
+			i=i/10;
+		}
+		System.out.println(sum);
+		}
+			
+		
+
+
+	}
+
+}

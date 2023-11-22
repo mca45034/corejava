@@ -1,0 +1,39 @@
+package in.com.String;
+
+public class StringByIntegerSum {
+
+	public static void main(String[] args) {
+//		String s="malayalam";
+//		for (char i = 'a'; i <='z'; i++) {
+//			int count=0;
+//			for (int j = 0; j < s.length(); j++) {
+//				if(s.charAt(j)==i) {
+//					count++;
+//				}
+//				
+//				
+//			}
+//			if(count>0) {
+//				System.out.println(i+"-"+count);
+//			}
+//			
+//		}
+		
+		String s="rahu2lkuma4r";
+		for (int i = 0; i <= 9; i++) {
+			int count=0;
+			for (int j = 0; j < s.length(); j++) {
+				if(j==i) {
+					count++;
+				}
+				
+			}
+			if(count>0) {
+				System.out.println(i+"-"+count);
+			}
+			
+		}
+
+	}
+
+}
